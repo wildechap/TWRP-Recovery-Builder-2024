@@ -83,12 +83,6 @@ jobs:
     - name: Cleanup
       uses: rokibhasansagar/slimhub_actions@main
 
-      
-    - name: Cleanup2
-      run: |
-       sudo swapoff /swapfile
-       sudo rm -rf /swapfile /usr/share/dotnet /usr/local/lib/android /opt/ghc
-
     - name: Set Swap Space
       uses: pierotofy/set-swap-space@master
       with:
